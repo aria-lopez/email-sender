@@ -4,7 +4,8 @@
   "description": "A NodeJS powered email Microservice",
   "main": "lib/index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "nodemon lib/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,11 @@
   },
   "homepage": "https://github.com/aria-lopez/email-sender#readme",
   "dependencies": {
+    "body-parser": "^1.19.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongoose": "^6.1.1",
-    "node-mailer": "^0.1.1"
+    "node-mailer": "^0.1.1",
+    "nodemon": "^2.0.15"
   }
 }
